@@ -142,6 +142,7 @@ export class SearchComponent {
     const combinedResults = [...idResults, ...nameInterventionResults];
     const uniqueResults = new Set(combinedResults);
     this.filteredTableList = Array.from(uniqueResults);
+    console.log(this.filteredTableList);
   }
 
   searchIndex(text: string, index: { [key: string]: ElementTable[] }): ElementTable[] {
